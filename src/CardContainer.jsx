@@ -1,11 +1,11 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import reacte from '../public/vite.svg'
+
 
 function CardContainer() {
   return (
     <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={reacte} style={{padding: "20px"}}/>
+      <Card.Img variant="top" src="vite.svg" style={{padding: "20px"}}/>
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>

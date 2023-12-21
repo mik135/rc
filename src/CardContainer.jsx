@@ -2,17 +2,17 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 
-function CardContainer() {
+// eslint-disable-next-line react/prop-types
+function CardContainer({ src, title, description }) {
   return (
     <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="vite.svg" style={{padding: "20px"}}/>
+      <Card.Img variant="top" src={src} style={{height: "100%"}}/>
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>{title}</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the cards content.
+          {description}
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="primary">Meet Up</Button>
       </Card.Body>
     </Card>
   );
